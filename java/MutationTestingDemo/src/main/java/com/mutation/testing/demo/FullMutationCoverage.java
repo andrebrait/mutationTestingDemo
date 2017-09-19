@@ -1,7 +1,7 @@
 package com.mutation.testing.demo;
 
 /**
- * Hello world!
+ * This example class contains a simple method where all branches are tested.
  */
 class FullMutationCoverage {
     String isIntegerGreaterThanOrLessThanZero(int input) {

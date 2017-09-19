@@ -1,34 +1,31 @@
 package com.mutation.testing.demo;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.junit.platform.runner.JUnitPlatform;
-import org.junit.runner.RunWith;
+import org.junit.Before;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
-@RunWith(JUnitPlatform.class)
-class FullMutationCoverageTest {
+public class FullMutationCoverageTest {
 
     private FullMutationCoverage testee;
 
-    @BeforeEach
-    void setUp() {
+    @Before
+    public void setUp() {
         testee =  new FullMutationCoverage();
     }
 
     @Test
-    void greaterThanZero() {
+    public void greaterThanZero() {
         assertEquals("Greater than zero", testee.isIntegerGreaterThanOrLessThanZero(1));
     }
 
     @Test
-    void lessThanZero() {
+    public void lessThanZero() {
         assertEquals("Less than zero", testee.isIntegerGreaterThanOrLessThanZero(-1));
     }
 
     @Test
-    void zero() {
+    public void zero() {
         assertEquals("Zero", testee.isIntegerGreaterThanOrLessThanZero(0));
     }
 }
