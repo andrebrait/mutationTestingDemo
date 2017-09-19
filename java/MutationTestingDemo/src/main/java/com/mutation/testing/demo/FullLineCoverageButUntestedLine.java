@@ -1,5 +1,8 @@
 package com.mutation.testing.demo;
 
+import com.mutation.testing.demo.cake.Cake;
+import com.mutation.testing.demo.cake.CakeType;
+
 /**
  * This example class contains a simple method where all lines of the method are executed by the tests but one line of
  * the functionality is not asserted upon.
@@ -28,66 +31,4 @@ class FullLineCoverageButUntestedLine {
         return cake;
     }
 
-    class Cake {
-        private int margarine;
-        private int flour;
-        private int cocoa;
-        private int eggs;
-        private int orangeJuice;
-        private int sugar;
-
-        void setMargarine(int margerine) {
-            this.margarine = margerine;
-        }
-
-        int getMargarine() {
-            return margarine;
-        }
-
-        void setFlour(int flour) {
-            this.flour = flour;
-        }
-
-        int getFlour() {
-            return flour;
-        }
-
-        void setCocoa(int cocoa) {
-            this.cocoa = cocoa;
-        }
-
-        int getCocoa() {
-            return cocoa;
-        }
-
-        void setEggs(int eggs) {
-            this.eggs = eggs;
-        }
-
-        int getEggs() {
-            return eggs;
-        }
-
-        void setOrangeJuice(int orangeJuice) {
-            this.orangeJuice = orangeJuice;
-        }
-
-        int getOrangeJuice() {
-            return orangeJuice;
-        }
-
-        void setSugar(int sugar) {
-            this.sugar = sugar;
-        }
-
-        int getSugar() {
-            return sugar;
-        }
-    }
-
-    protected enum CakeType {
-        VICTORIA_SPONGE,
-        CHOCOLATE,
-        ORANGE
-    }
 }

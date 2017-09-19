@@ -1,7 +1,7 @@
 package com.mutation.testing.demo;
 
-import com.mutation.testing.demo.FullLineCoverageButUntestedLine.CakeType;
-import com.mutation.testing.demo.FullLineCoverageButUntestedLine.Cake;
+import com.mutation.testing.demo.cake.CakeType;
+import com.mutation.testing.demo.cake.Cake;
 import org.junit.Before;
 import org.junit.Test;
 
