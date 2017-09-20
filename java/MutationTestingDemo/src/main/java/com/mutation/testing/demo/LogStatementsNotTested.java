@@ -3,6 +3,10 @@ package com.mutation.testing.demo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * This class contains log statements. Pit will not mutate these lines but the if statement checking if trace logging is
+ * enabled means the logging line will not be executed.
+ */
 class LogStatementsNotTested {
     private static final Logger LOG = LoggerFactory.getLogger(LogStatementsNotTested.class);
 
