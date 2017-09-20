@@ -5,7 +5,12 @@ import com.mutation.testing.demo.cake.CakeType;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ContainsRedundantCode {
+/**
+ * This class contains unnecessary code. Fetching the existing value and the null check are not required as compute if
+ * absent will return the existing value if it is present anyway. This means that mutation in this redundant code will
+ * not be killed as the behaviour will be unchanged.
+ */
+class ContainsRedundantCode {
 
     private Map<CakeType, Integer> orderMap = new HashMap<>();
 

@@ -38,22 +38,7 @@
                             <withHistory>true</withHistory>
                             <threads>8</threads>
                             <mutators>
-                                <mutator>INVERT_NEGS</mutator>
-                                <mutator>RETURN_VALS</mutator>
-                                <mutator>INLINE_CONSTS</mutator>
-                                <mutator>MATH</mutator>
-                                <mutator>VOID_METHOD_CALLS</mutator>
-                                <mutator>NEGATE_CONDITIONALS</mutator>
-                                <mutator>CONDITIONALS_BOUNDARY</mutator>
-                                <mutator>INCREMENTS</mutator>
-                                <mutator>REMOVE_INCREMENTS</mutator>
-                                <mutator>NON_VOID_METHOD_CALLS</mutator>
-                                <mutator>CONSTRUCTOR_CALLS</mutator>
-                                <mutator>REMOVE_CONDITIONALS</mutator>
-                                <mutator>EXPERIMENTAL_MEMBER_VARIABLE</mutator>
-                                <mutator>EXPERIMENTAL_SWITCH</mutator>
-                                <mutator>EXPERIMENTAL_ARGUMENT_PROPAGATION</mutator>
-                                <mutator>EXPERIMENTAL_NAKED_RECEIVER</mutator>
+                                <mutator>ALL</mutator>
                             </mutators>
                         </configuration>
                     </execution>

@@ -1,5 +1,8 @@
 package com.mutation.testing.demo.cake;
 
+/**
+ * A simple POJO object to support some of the examples.
+ */
 public class Cake {
     private int margarine;
     private int flour;

@@ -5,7 +5,7 @@ import com.mutation.testing.demo.cake.CakeType;
 
 /**
  * This example class contains a simple switch statement with a default block which ensures the code fails fast if there
- * are new items added to the enum but at the moment that code is unreachable so any mutations there will not be killed.
+ * are new enum values added but at the moment that code is unreachable so any mutations there will not be killed.
  */
 class UntestableSwitchDefault {
 
