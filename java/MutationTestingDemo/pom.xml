@@ -35,7 +35,10 @@
                             <goal>mutationCoverage</goal>
                         </goals>
                         <configuration>
-                            <withHistory>true</withHistory>
+                            <historyInputFile>./pitHistory.bin</historyInputFile>
+                            <historyOutputFile>./pitHistory.bin</historyOutputFile>
+                            <excludedClasses>com.mutation.testing.demo.ExcludedFromAnalysis</excludedClasses>
+                            <excludedMethods>unusedMethod</excludedMethods>
                             <threads>8</threads>
                             <mutators>
                                 <mutator>ALL</mutator>
