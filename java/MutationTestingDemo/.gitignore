@@ -1,4 +1,4 @@
-/MutationTestingDemo.iml
-/target/
-/.idea/
-/pitHistory.bin
+*.iml
+target
+.idea
+pitHistory.bin
