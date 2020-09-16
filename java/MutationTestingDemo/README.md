@@ -8,4 +8,16 @@ Assuming you have Java and Maven installed you can just run:
 mvn clean install
 ```
 
-This will build the project, run the tests and the PIT analysis. The PIT results can be found in ./target/pit-reports each PIT run will generate its output in a new time stamped folder. The index.html file within this folder can be opened in a browser to view the results. Each class is named to indicate what it demonstrates and has a brief Javadoc description that adds a bit more detail.
+This will build the project, run the tests and the coverage and PIT analysis. The PIT results can be found in ./target/pit-reports each PIT run will generate its output in a new time stamped folder. The index.html file within this folder can be opened in a browser to view the results. Each class is named to indicate what it demonstrates and has a brief Javadoc description that adds a bit more detail.
+
+In order to only generate the code coverage report using JaCoCo, run:
+
+```
+mvn clean prepare-package
+```
+
+In order to only run the mutation coverage goal, run:
+
+```
+mvn clean test-compile pitest:mutationCoverage
+```

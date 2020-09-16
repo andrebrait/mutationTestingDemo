@@ -5,6 +5,9 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * Contains missing test cases which will bring the mutation test coverage to 100%.
+ */
 public class MissingTestCaseTestFix {
 
     //@Test
